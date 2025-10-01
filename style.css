@@ -18,7 +18,7 @@ nav ul li {
     margin-right: 20px;
     font-size: 20px;
     padding: 23px;
-    width: 310px; /* (1300px - 60px del margin-right) / 4 = 310px */
+    width: 310px; /* (1300px(body) - 60px del margin-right) / 4 = 310px */
     text-decoration: none;
     padding: 23px;
     color: rgb(8, 8, 8);
@@ -32,6 +32,7 @@ nav ul li {
 }
 .amenu:hover{
     background-color: darkcyan;
+    box-shadow: 0px 0px 15px rgba(0, 0, 139, 0.8);
 }
 
 /* Estilos de la Cabecera/Título Principal */
@@ -52,7 +53,7 @@ nav ul li {
 
 /* Sección de Introducción: 'El cambio climatico y sus efectos en los animales' */
 .cambioClimaticoInicio{
-    width: 1250px; /* 1300px - 25px padding izquierdo - 25px padding derecho = 1250px */
+    width: 1250px; /* 1300px(body) - 25px (padding izquierdo) - 25px (padding derecho) = 1250px */
     background: rgb(130, 245, 207);
     padding: 15px;
     border: 2px solid black;
@@ -81,6 +82,7 @@ nav ul li {
     border-radius: 10px; 
     padding: 15px;
 }
+
 /* Estilos de las imágenes de los animales */
 img{
     width: 450px; /* Imagen animal: 1250px(cajaAnimales) - 15px (padding izq) - 15px (padding der) - 8 (border) = 1212px para usar -  uso 450px = 762px sobra*/
@@ -165,7 +167,7 @@ label{
 
 /* Estilos de cajas de texto en la sección de ayuda */
 .cajasTextoAyuda{
-    width: 600px; /*600px+600px=1200px sobran 100px*/
+    width: 600px; /*600px+600px=1200px sobran 100px - 8(border) =92px*/
     background: rgb(188, 241, 230);
     border: 2px solid black;
     border-radius: 10px; 
@@ -185,9 +187,14 @@ label{
 
 /*lista animales extra*/
 .animalesExtra{
-    width: 300px; /* 4 cajas x 300px = 1200px, 3 espacios x 17px = 51px, total ocupado = 1251px, sobran 49px */
+    width: 300px; /* 4 img x 300px = 1200px, 3 (margin-left) x 17px = 51px, total ocupado = 1251px, sobran 49px -8 (borde) = 41px */
     margin-left: 17px;
     margin-bottom: 25px;
+}
+
+.EnlaceAnimalesExtr :hover{
+ box-shadow:  0px 0px 15px rgba(0, 0, 139, 0.8);
+ transform: scale(1.05);
 }
 
 /* Estilos del Pie de Página (Footer) */
@@ -197,5 +204,4 @@ label{
     text-align: center;
     height: 150px;
     padding-bottom: 40px;
-
 }
