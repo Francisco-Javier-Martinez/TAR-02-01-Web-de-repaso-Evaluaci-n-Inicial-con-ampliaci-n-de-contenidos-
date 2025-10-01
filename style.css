@@ -81,10 +81,9 @@ nav ul li {
     border-radius: 10px; 
     padding: 15px;
 }
-
 /* Estilos de las imágenes de los animales */
 img{
-    width: 450px; /* Imagen animal: 1250px - 715px de cajasTextoAnimal - 15px padding izq - 15px padding der = 450px */
+    width: 450px; /* Imagen animal: 1250px(cajaAnimales) - 15px (padding izq) - 15px (padding der) - 8 (border) = 1212px para usar -  uso 450px = 762px sobra*/
     display: inline-block;
     border: 2px solid black;
     border-radius: 10px; 
@@ -98,12 +97,12 @@ img.imagenesAnimales,
 
 /* Estilos de las cajas de texto con descripciones de animales */
 .cajasTextoAnimal{
-    width: 715px; /* 1250px - 450px imagen - 15px padding izq - 15px padding der = 715px */
+    width: 724px; /* 762p(lo que queda) - 15px (padding izq) - 15px (padding der) - 8 (border)= 724px */
     background: rgb(188, 241, 230);
     border: 2px solid black;
     border-radius: 10px; 
     display: inline-block;
-    padding: 35px;
+    padding: 15px;
     font-size: 18px;
     text-align: justify;
 }
@@ -198,4 +197,5 @@ label{
     text-align: center;
     height: 150px;
     padding-bottom: 40px;
+
 }
